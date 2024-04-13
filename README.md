@@ -163,7 +163,7 @@ Now, Build our webserver job, this jenkins job download Https webserver and star
 In webserver need webpage , we pull webpage from gitHub using new Job. 
 
 
-❄️Step-3:  (On Jenkins) (GitHubjob)
+❄️Step-3:  (On Jenkins) (GitHubjob1)
 
 Now here i create new job which pull the code from GitHub and Deploy that code 'webpage' to apache webserver DocumetRoot location that is /var/www/html.
 
@@ -204,13 +204,29 @@ This job run on jenkins and jenkins is on EC2 amazon linux , this job run only i
 ![Screenshot 2024-04-13 183152](https://github.com/Pratikshinde55/Jenkins/assets/145910708/ab9e56bb-0593-48ee-a313-d32a479a7a0e)
 
 
+Now we need run 1st time manually job i my case name of job is GitHubjob1, after 1st time we run that job automatically run when new code updated on gitHub.
+
+Click on Build now button of jenkins of Githubjob1
+
+All set-up is done now i can change in code as developer from local laptop using Git Bash app and commit that code, After commit new code automatically push to gitHub
+by Hooks & whenever that new code go to GitHub, On jenkins Job2 named as GitHubjob1 is automatically run using Poll SCM trigger.
 
 
+❄️Step-4: (On Browser)
 
+Now check connect webserver from browser for view webpage or content:
 
+Public Ip of instance in my case public ip of EC2 is - "http://52.66.237.252/"
 
+Note :
 
+  EC2 instance inbound rule must allow port no 80 that is http:
 
+![Screenshot 2024-04-13 184308](https://github.com/Pratikshinde55/Jenkins/assets/145910708/90e71a4f-b593-4a2c-8246-cd6c69c2bade)
+
+Now see :
+
+![image](https://github.com/Pratikshinde55/Jenkins/assets/145910708/c726e158-b74f-451b-9413-c79644f805ac)
 
 
 
