@@ -84,7 +84,7 @@ Developer create code and upload code on SCM GitHub , that code(webpage) will de
 
 By Using jenkins i do this set-up automatic:
 
-Step-1:
+❄️Step-1:
 
 I use Git Bash on local laptop for create code as developer. This code is push to gitHub.
 
@@ -129,6 +129,13 @@ Now code change & need to only commit that code file:
    $ git commit index.html -m "hooksactivate"
 
  ![Screenshot 2024-04-13 174650](https://github.com/Pratikshinde55/Jenkins/assets/145910708/3dd4d2ef-485e-401c-9eac-f5c6b8621580)
+
+Note:-
+
+Whenever i change code and commit this code automatically updated on GitHub.
+
+
+❄️Step-2:  (On Jenkins)
 
 
 
