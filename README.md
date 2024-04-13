@@ -76,5 +76,21 @@ Create First Admin User Username Interface appers: Fill info and start jenkins:
 
 
 
-# ProJecT
+# ProJecT:
+
+About Infrasturcture:
+
+Developer create code and upload code on SCM GitHub , that code(webpage) will deploy webserver and this webserver can access by Client from google.
+
+By Using jenkins i do this set-up automatic:
+
+Step-1:
+
+I use Git Bash on local laptop for create code as developer. This code is push to gitHub.
+
+Here i use Hooks which make automation that is whenever i change code and commit that code it automatically update on GitHub.
+
+
+
+
 
