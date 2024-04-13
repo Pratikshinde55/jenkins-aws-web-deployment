@@ -76,7 +76,7 @@ Create First Admin User Username Interface appers: Fill info and start jenkins:
 
 
 
-# ProJecT:
+# ❄️ProJecT:
 
 About Infrasturcture:
 
@@ -89,6 +89,19 @@ Step-1:
 I use Git Bash on local laptop for create code as developer. This code is push to gitHub.
 
 Here i use Hooks which make automation that is whenever i change code and commit that code it automatically update on GitHub.
+
+      $ cd documents
+      $ mkdir jenkins-2024
+      $ cd jenkins-2024
+      $ mkdir myproject
+      $ cd myproject
+      $ git init myproject
+      $ notepad index.html
+      $ git add index.html
+      $ git commit index.html -m "mychange"
+
+
+
 
 
 
