@@ -119,7 +119,8 @@ Now Developer set-up done :
 
 Note:--
 
-  Pushing code is manual but we make this automatic by using Git "Hook" ,
+  Pushing code is manual but we make this automatic by using Git "Hook" , In Hooks folder create new post-commit file for automation.
+  as soon we commit the new code that code automatically push to GitHub this done by post-commit Hooks. (Below screenshot refer)
 
 ![Screenshot 2024-04-13 174200](https://github.com/Pratikshinde55/Jenkins/assets/145910708/c41d2ed1-3aec-4dfd-b86a-a187ec5001b6)
 
