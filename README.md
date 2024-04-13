@@ -193,6 +193,7 @@ Now , last step of job is to copy code or webpage which is downloaded from GitHu
 
 ![Screenshot 2024-04-13 182528](https://github.com/Pratikshinde55/Jenkins/assets/145910708/045d9773-c284-47a8-a4df-fd2e05a1e8a3)
 
+Now apply & save job.
 
 
 
