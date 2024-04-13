@@ -174,7 +174,22 @@ Here use GitHub repo URL and "Branches to build" same where our code kept on Git
 ![Screenshot 2024-04-13 181522](https://github.com/Pratikshinde55/Jenkins/assets/145910708/5990ca24-38f8-46b2-ae85-f7295edfd731)
 
 
+Note:
+
 But every time new code push on GitHub by developer then i need to Build my job again this is make slow or manual because of this i use "triggers"
+
+Here use "Poll SCM" Schedule for every min. means this helps to automatically pull code from gitHub not need to manually Build job, Whenever new code on GitHub then Poll SCM trigger 
+automatically download that code.
+
+![Screenshot 2024-04-13 181820](https://github.com/Pratikshinde55/Jenkins/assets/145910708/3a90bd78-7997-452e-979f-7b5c3ac4ee53)
+
+Note: 
+
+That downloaded code is save in jenkins workspace of that job.
+
+![Screenshot 2024-04-13 182315](https://github.com/Pratikshinde55/Jenkins/assets/145910708/ec01e703-05d4-46f6-a5d3-c04d2fa02f59)
+
+
 
 
 
