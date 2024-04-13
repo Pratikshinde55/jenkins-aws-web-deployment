@@ -20,27 +20,27 @@ On Aws EC2 instance where install jenkins:
 1. Install yum repo:
  
 
-       #sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+       #  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
 3. Install jenkins key:
 
 
-       #sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+       #  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 
 4. Install java: (This command is different for different os)
 
 
-       #yum install java-17-amazon-corretto-devel
+       #  yum install java-17-amazon-corretto-devel
 
 5. Install Jenkins
 
 
-       #yum install jenkins -y
+       #  yum install jenkins -y
 
 6. Start Jenkins service:
 
 
-       #systemctl start jenkins
+       #  systemctl start jenkins
 
 Now Jenkins is installed successfully, connet jenkins by webUI:
 
