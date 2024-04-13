@@ -69,3 +69,9 @@ Copy password and paste on WebUI , now Select 'Install suggested plugins' Plugin
 
 ![Screenshot 2024-04-13 151514](https://github.com/Pratikshinde55/Jenkins/assets/145910708/42353e64-69da-493d-9816-85153ec7e479)
 
+
+Create First Admin User Username Interface appers: Fill info and start jenkins:
+
+![Screenshot 2024-04-13 152143](https://github.com/Pratikshinde55/Jenkins/assets/145910708/6765f294-f394-4223-8881-4755699dc96d)
+
+
