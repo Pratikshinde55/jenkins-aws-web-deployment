@@ -185,9 +185,19 @@ automatically download that code.
 
 Note: 
 
-That downloaded code is save in jenkins workspace of that job.
+That downloaded code is save in jenkins workspace of that job.( this save after when we 1st time Build job then automatically it updated by Poll SCM)
 
 ![Screenshot 2024-04-13 182315](https://github.com/Pratikshinde55/Jenkins/assets/145910708/ec01e703-05d4-46f6-a5d3-c04d2fa02f59)
+
+Now , last step of job is to copy code or webpage which is downloaded from GitHub, This downloaded code copy to /var/www/html
+
+![Screenshot 2024-04-13 182528](https://github.com/Pratikshinde55/Jenkins/assets/145910708/045d9773-c284-47a8-a4df-fd2e05a1e8a3)
+
+
+
+
+
+
 
 
 
