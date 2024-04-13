@@ -37,5 +37,8 @@ On Aws EC2 instance where install jenkins:
 
        #yum install jenkins -y
 
+6. Start Jenkins service:
 
+
+       #systemctl start jenkins
 .
