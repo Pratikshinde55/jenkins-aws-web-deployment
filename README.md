@@ -53,3 +53,19 @@ Note:
   AWS EC2 have Firewall , for connect to EC2 we need allow security Group:
 
    In security group >> edit inbound rule >> "Custom TCP  8080  myIP "
+
+![Screenshot 2024-04-13 150813](https://github.com/Pratikshinde55/Jenkins/assets/145910708/05ad7d9f-e63e-49cf-95bb-448dfb4a1916)
+
+Now Jenkins InterFace occur:
+
+![Screenshot 2024-04-13 151042](https://github.com/Pratikshinde55/Jenkins/assets/145910708/1e827615-2005-46ef-8390-427624c5bb78)
+
+For Login jenkins Password is neccessary & Jenkins kept password at location "/var/lib/jenkins/secrets/initialAdminPassword" , Go Jenkins OS  and view password 
+
+
+    #cat /var/lib/jenkins/secrets/initialAdminPassword
+
+Copy password and paste on WebUI , now Select 'Install suggested plugins' Plugins start downloading:
+
+![Screenshot 2024-04-13 151514](https://github.com/Pratikshinde55/Jenkins/assets/145910708/42353e64-69da-493d-9816-85153ec7e479)
+
