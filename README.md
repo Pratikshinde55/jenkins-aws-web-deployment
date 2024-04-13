@@ -101,7 +101,15 @@ Here i use Hooks which make automation that is whenever i change code and commit
       $ git commit index.html -m "mychange"
 
 
+Now, we create empty repo on GitHub for push local code . Don't use README file.
 
+On GitHub there commands give for push code locally.
+
+      $ git remote add origin https://github.com/Pratikshinde55/Jenkis-try.git
+      $ git branch -M main
+      $ git push -u origin main
+
+    
 
 
 
