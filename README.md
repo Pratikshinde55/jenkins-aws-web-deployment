@@ -124,6 +124,13 @@ Note:--
 
 ![Screenshot 2024-04-13 174200](https://github.com/Pratikshinde55/Jenkins/assets/145910708/c41d2ed1-3aec-4dfd-b86a-a187ec5001b6)
 
+Now code change & need to only commit that code file:
+
+   $ git commit index.html -m "hooksactivate"
+
+ ![Screenshot 2024-04-13 174650](https://github.com/Pratikshinde55/Jenkins/assets/145910708/3dd4d2ef-485e-401c-9eac-f5c6b8621580)
+
+
 
     
 
