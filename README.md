@@ -148,6 +148,15 @@ Now on jenkins i created two Jobs
 
 ![Screenshot 2024-04-13 175659](https://github.com/Pratikshinde55/Jenkins/assets/145910708/423f0348-6220-4f4a-9e7f-93612c46e603)
 
+Note: 
+
+For this we need jenkins have root level or admin level power so we give power to jenkins then build webserver job, for this we go to Ec2 instance where jenkins installed or run and give ALL power.
+
+     # vim /etc/sudoers
+
+![Screenshot 2024-04-13 180236](https://github.com/Pratikshinde55/Jenkins/assets/145910708/3352d74f-0fde-4aa8-9990-95256bd4cbef)
+
+
 
 
 
