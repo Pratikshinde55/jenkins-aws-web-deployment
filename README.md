@@ -135,7 +135,7 @@ Note:-
 Whenever i change code and commit this code automatically updated on GitHub.
 
 
-❄️Step-2:  (On Jenkins)
+❄️Step-2:  (On Jenkins) (webserver job)
 
 Now on jenkins i created two Jobs 
 - 1st job (gitHubjob1) that pull code from gitHub and deploy that Code on webserver location /var/www/html .
@@ -159,6 +159,13 @@ For this we need jenkins have root level or admin level power so we give power t
 Now, Build our webserver job, this jenkins job download Https webserver and start Httpd service. 
 
 ![Screenshot 2024-04-13 180534](https://github.com/Pratikshinde55/Jenkins/assets/145910708/6e9486b3-b0a2-4cfe-b6a7-34e7ac2ee9e0)
+
+In webserver need webpage , we pull webpage from gitHub using new Job. 
+
+
+❄️Step-3:  (On Jenkins) (GitHubjob)
+
+Now here i create new job which pull the code from GitHuv and Deploy that code 'webpage' to apache webserver DocumetRoot location that is /var/www/html.
 
 
 
