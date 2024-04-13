@@ -105,9 +105,24 @@ Now, we create empty repo on GitHub for push local code . Don't use README file.
 
 On GitHub there commands give for push code locally.
 
-      $ git remote add origin https://github.com/Pratikshinde55/Jenkis-try.git
+      $ git remote add origin https://-----------
       $ git branch -M main
       $ git push -u origin main
+
+Now 1st time we push then need login we use command for login
+
+      $ git config --global user.email "____" <<--  email GitHub
+      $  git config --global user.name "______" <<--   password GitHub
+
+....
+Now Developer set-up done :
+
+Note:--
+
+  Pushing code is manual but we make this automatic by using Git "Hook" ,
+
+![Screenshot 2024-04-13 174200](https://github.com/Pratikshinde55/Jenkins/assets/145910708/c41d2ed1-3aec-4dfd-b86a-a187ec5001b6)
+
 
     
 
