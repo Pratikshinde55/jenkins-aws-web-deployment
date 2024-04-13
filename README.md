@@ -52,4 +52,4 @@ Note:
 
   AWS EC2 have Firewall , for connect to EC2 we need allow security Group:
 
-     In security group >> edit inbound rule >> "Custom TCP  8080  myIP "
+   In security group >> edit inbound rule >> "Custom TCP  8080  myIP "
