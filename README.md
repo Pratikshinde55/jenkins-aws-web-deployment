@@ -195,7 +195,13 @@ Now , last step of job is to copy code or webpage which is downloaded from GitHu
 
 Now apply & save job.
 
+Note :---
 
+This job run on jenkins and jenkins is on EC2 amazon linux , this job run only if in our host amazon linux2 EC2 have git so we need to install git on amazon linux2 where jenkins installed.
+
+    # sudo yum install git -y
+
+![Screenshot 2024-04-13 183152](https://github.com/Pratikshinde55/Jenkins/assets/145910708/ab9e56bb-0593-48ee-a313-d32a479a7a0e)
 
 
 
