@@ -41,4 +41,15 @@ On Aws EC2 instance where install jenkins:
 
 
        #systemctl start jenkins
-.
+
+Now Jenkins is installed successfully, connet jenkins by webUI:
+
+For this we use EC2 instance public IP and Jenkins work on port no. 8080,
+
+On Browser:--  " http://Public_IP : 8080 "
+
+Note: 
+
+  AWS EC2 have Firewall , for connect to EC2 we need allow security Group:
+
+     In security group >> edit inbound rule >> "Custom TCP  8080  myIP "
