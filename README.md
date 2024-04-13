@@ -138,8 +138,8 @@ Whenever i change code and commit this code automatically updated on GitHub.
 ❄️Step-2:  (On Jenkins) (webserver job)
 
 Now on jenkins i created two Jobs 
-- 1st job (gitHubjob1) that pull code from gitHub and deploy that Code on webserver location /var/www/html .
-- 2nd job (webserver) that create websever setup by using jenkins.
+- 1st job (webserver) that create websever setup by using jenkins.
+- 1nd job (gitHubjob1) that pull code from gitHub and deploy that Code on webserver location /var/www/html .
 
 
 1st create webserver job :
@@ -165,7 +165,16 @@ In webserver need webpage , we pull webpage from gitHub using new Job.
 
 ❄️Step-3:  (On Jenkins) (GitHubjob)
 
-Now here i create new job which pull the code from GitHuv and Deploy that code 'webpage' to apache webserver DocumetRoot location that is /var/www/html.
+Now here i create new job which pull the code from GitHub and Deploy that code 'webpage' to apache webserver DocumetRoot location that is /var/www/html.
+
+Note:
+
+Here use GitHub repo URL and "Branches to build" same where our code kept on GitHub in my case main is branch.
+
+![Screenshot 2024-04-13 181522](https://github.com/Pratikshinde55/Jenkins/assets/145910708/5990ca24-38f8-46b2-ae85-f7295edfd731)
+
+
+But every time new code push on GitHub by developer then i need to Build my job again this is make slow or manual because of this i use "triggers"
 
 
 
