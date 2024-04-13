@@ -142,6 +142,14 @@ Now on jenkins i created two Jobs
 - 2nd job (webserver) that create websever setup by using jenkins.
 
 
+1st create webserver job :
+
+   on GitHub create new job named as webserver using freestyle & in Build step put below screenshot steps.
+
+![Screenshot 2024-04-13 175659](https://github.com/Pratikshinde55/Jenkins/assets/145910708/423f0348-6220-4f4a-9e7f-93612c46e603)
+
+
+
 
 
     
