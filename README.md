@@ -137,6 +137,11 @@ Whenever i change code and commit this code automatically updated on GitHub.
 
 ❄️Step-2:  (On Jenkins)
 
+Now on jenkins i created two Jobs 
+- 1st job (gitHubjob1) that pull code from gitHub and deploy that Code on webserver location /var/www/html .
+- 2nd job (webserver) that create websever setup by using jenkins.
+
+
 
 
     
