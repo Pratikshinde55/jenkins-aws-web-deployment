@@ -156,6 +156,13 @@ For this we need jenkins have root level or admin level power so we give power t
 
 ![Screenshot 2024-04-13 180236](https://github.com/Pratikshinde55/Jenkins/assets/145910708/3352d74f-0fde-4aa8-9990-95256bd4cbef)
 
+Now, Build our webserver job, this jenkins job download Https webserver and start Httpd service. 
+
+![Screenshot 2024-04-13 180534](https://github.com/Pratikshinde55/Jenkins/assets/145910708/6e9486b3-b0a2-4cfe-b6a7-34e7ac2ee9e0)
+
+
+
+
 
 
 
