@@ -86,7 +86,7 @@ By Using jenkins i do this set-up automatic:
 
 Use following steps for do above set-up automatic by using 'Jenkins'.
 
-❄️Step-1:
+✧ Step-1 ✧
 
 I use Git Bash on local laptop for create code as developer. This code is push to gitHub.
 
@@ -103,7 +103,7 @@ Here i use Hooks which make automation that is whenever i change code and commit
       $ git commit index.html -m "mychange"
 
 
-Now, we create empty repo on GitHub for push local code . NOTE: Don't use README file.
+✧ Now, we create empty repo on GitHub for push local code . NOTE: Don't use README file.
 
 On GitHub there commands give for push code locally.
 
@@ -138,7 +138,7 @@ Note:-
 Whenever i change code and commit this code automatically updated on GitHub.
 
 
-❄️Step-2:  (On Jenkins) (webserver job)
+✧ Step-2 ✧  (On Jenkins) (webserver job)
 
 Now on jenkins i created two Jobs 
 - 1st job (webserver) that create websever setup by using jenkins.
@@ -166,7 +166,7 @@ Now, Build our webserver job, this jenkins job download Https webserver and star
 In webserver need webpage , we pull webpage from gitHub using new Job. 
 
 
-❄️Step-3:  (On Jenkins) (GitHubjob1)
+✧ Step-3 ✧  (On Jenkins) (GitHubjob1)
 
 Now here i create new job which pull the code from GitHub and Deploy that code 'webpage' to apache webserver DocumetRoot location that is /var/www/html.
 
@@ -215,7 +215,7 @@ All set-up is done now i can change in code as developer from local laptop using
 by Hooks & whenever that new code go to GitHub, On jenkins Job2 named as GitHubjob1 is automatically run using Poll SCM trigger.
 
 
-❄️Step-4: (On Browser)
+✧ Step-4 ✧ (On Browser)
 
 Now check connect webserver from browser for view webpage or content:
 
