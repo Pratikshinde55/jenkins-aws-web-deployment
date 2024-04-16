@@ -145,7 +145,7 @@ Now on jenkins i created two Jobs
 - 2nd job (gitHubjob1) that pull code from gitHub and deploy that Code on webserver location /var/www/html .
 
 
-1st create webserver job :
+ ✧ 1st create webserver job :
 
    on GitHub create new job named as webserver using freestyle & in Build step put below screenshot steps.
 
@@ -168,7 +168,7 @@ In webserver need webpage , we pull webpage from gitHub using new Job.
 
 ✧ Step-3 ✧  (On Jenkins) (GitHubjob1)
 
-Now here i create new job which pull the code from GitHub and Deploy that code 'webpage' to apache webserver DocumetRoot location that is /var/www/html.
+ ✧ 2nd Job: Now here i create new job which pull the code from GitHub and Deploy that code 'webpage' to apache webserver DocumetRoot location that is /var/www/html.
 
 Note:
 
