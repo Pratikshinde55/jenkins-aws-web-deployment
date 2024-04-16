@@ -76,7 +76,7 @@ Create First Admin User Username Interface appers: Fill info and start jenkins:
 
 
 
-# ❄️ ProJecT ❄️:
+# ❄️  Automated Web Deployment Pipeline with Jenkins on AWS ❄️
 
 About Infrasturcture of this project(use case):
 
