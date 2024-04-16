@@ -229,6 +229,11 @@ Public Ip of instance in my case public ip of EC2 is - "http://52.66.237.252/"
 
 Now see :
 
+ - Note:
+
+Whenever New webpage (code from developer to GitHub) comes then Jenkins job work and new webpage come by Fully Automation no need to manual update or Build job again 
+and again:
+
 ![image](https://github.com/Pratikshinde55/Jenkins/assets/145910708/c726e158-b74f-451b-9413-c79644f805ac)
 
 
