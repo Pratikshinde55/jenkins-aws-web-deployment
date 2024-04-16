@@ -48,7 +48,7 @@ For this we use EC2 instance public IP and Jenkins work or "Jenkins Default port
 
 On Browser:--  " http://Public_IP : 8080 " (Connect Jenkins WebUI)
 
-Note: 
+ - Note: 
 
   AWS EC2 Instance have Firewall , for connect to EC2 we need allow security Group:
 
@@ -119,7 +119,7 @@ Now 1st time we push then need login we use command for login.
 ....
 Now Developer set-up done ( push local code to GitHub SCM ):
 
-Note:--
+ - Note:--
 
   Pushing code is manual but we make this automatic by using Git "Hook" , In Hooks folder create new post-commit file for automation.
   as soon we commit the new code that code automatically push to GitHub this done by post-commit Hooks. (Below screenshot refer)
@@ -133,7 +133,7 @@ Now code change & need to only commit that code file ( Fully Automatic way to pu
 
  ![Screenshot 2024-04-13 174650](https://github.com/Pratikshinde55/Jenkins/assets/145910708/3dd4d2ef-485e-401c-9eac-f5c6b8621580)
 
-Note:-
+ - Note:-
 
 Whenever i change code and commit this code automatically updated on GitHub.
 
@@ -151,7 +151,7 @@ Now on jenkins i created two Jobs
 
 ![Screenshot 2024-04-13 175659](https://github.com/Pratikshinde55/Jenkins/assets/145910708/423f0348-6220-4f4a-9e7f-93612c46e603)
 
-Note: 
+ - Note: 
 
 For this we need jenkins have root level or admin level power so we give power to jenkins then build webserver job, for this we go to Ec2 instance where jenkins installed or run and give ALL power.
 
@@ -170,14 +170,14 @@ In webserver need webpage , we pull webpage from gitHub using new Job.
 
  ✧ 2nd Job: Now here i create new job which pull the code from GitHub and Deploy that code 'webpage' to apache webserver DocumetRoot location that is /var/www/html.
 
-Note:
+ - Note:
 
 Here use GitHub repo URL and "Branches to build" same where our code kept on GitHub in my case main is branch.
 
 ![Screenshot 2024-04-13 181522](https://github.com/Pratikshinde55/Jenkins/assets/145910708/5990ca24-38f8-46b2-ae85-f7295edfd731)
 
 
-Note:
+ - Note:
 
 But every time new code push on GitHub by developer then i need to Build my job again this is make slow or manual because of this i use "triggers"
 
@@ -186,7 +186,7 @@ automatically download that code.
 
 ![Screenshot 2024-04-13 181820](https://github.com/Pratikshinde55/Jenkins/assets/145910708/3a90bd78-7997-452e-979f-7b5c3ac4ee53)
 
-Note: 
+ - Note: 
 
 That downloaded code is save in jenkins workspace of that job.( this save after when we 1st time Build job then automatically it updated by Poll SCM)
 
@@ -198,7 +198,7 @@ Now , last step of job is to copy code or webpage which is downloaded from GitHu
 
 Now apply & save job.
 
-Note :---
+ - Note :---
 
 This job run on jenkins and jenkins is on EC2 amazon linux , this job run only if in our host amazon linux2 EC2 have git so we need to install git on amazon linux2 where jenkins installed.
 
@@ -221,7 +221,7 @@ Now check connect webserver from browser for view webpage or content:
 
 Public Ip of instance in my case public ip of EC2 is - "http://52.66.237.252/"
 
-Note :
+ - Note :
 
   EC2 instance inbound rule must allow port no 80 that is http:
 
