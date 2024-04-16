@@ -8,31 +8,31 @@ Following are the ways of connect to jenkins:
 
 Install and steup of jenkins bye WebUI:
  
-For this i use AWS Cloud EC2 instance amazon linux ami, In this instance i install jenkins.
+For this i use AWS Cloud EC2 instance (amazon linux2 ami), In this instance i installed jenkins.
 
 Note:
 
-For install jenkins need yum repository and key & Jenkins is made from Java , so jenkins work on java .
+For install jenkins need yum repository and key, & Jenkins is made from Java , so jenkins work on java .
 (Link:  https://pkg.jenkins.io/redhat-stable/ )
 
-On Aws EC2 instance where install jenkins:
+Following command For Installing Jenkins on AWS EC2  :
 
-1. Install yum repo:
+1. Install yum repo For Jenkins:
  
 
        #  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
-3. Install jenkins key:
+3. Install Jenkins key:
 
 
        #  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 
-4. Install java: (This command is different for different os)
+4. Install java For Jenkins: (This command is different for different os)
 
 
        #  yum install java-17-amazon-corretto-devel
 
-5. Install Jenkins
+5. Install Jenkins:
 
 
        #  yum install jenkins -y
@@ -44,19 +44,19 @@ On Aws EC2 instance where install jenkins:
 
 Now Jenkins is installed successfully, connet jenkins by webUI:
 
-For this we use EC2 instance public IP and Jenkins work on port no. 8080,
+For this we use EC2 instance public IP and Jenkins work or "Jenkins Default port no. 8080",
 
-On Browser:--  " http://Public_IP : 8080 "
+On Browser:--  " http://Public_IP : 8080 " (Connect Jenkins WebUI)
 
 Note: 
 
-  AWS EC2 have Firewall , for connect to EC2 we need allow security Group:
+  AWS EC2 Instance have Firewall , for connect to EC2 we need allow security Group:
 
    In security group >> edit inbound rule >> "Custom TCP  8080  myIP "
 
 ![Screenshot 2024-04-13 150813](https://github.com/Pratikshinde55/Jenkins/assets/145910708/05ad7d9f-e63e-49cf-95bb-448dfb4a1916)
 
-Now Jenkins InterFace occur:
+Now Jenkins InterFace occurs on browser using Public_Ip of instance and 8080 port no. :
 
 ![Screenshot 2024-04-13 151042](https://github.com/Pratikshinde55/Jenkins/assets/145910708/1e827615-2005-46ef-8390-427624c5bb78)
 
@@ -76,13 +76,15 @@ Create First Admin User Username Interface appers: Fill info and start jenkins:
 
 
 
-# ❄️ProJecT:
+# ❄️ ProJecT ❄️:
 
-About Infrasturcture:
+About Infrasturcture of this project(use case):
 
 Developer create code and upload code on SCM GitHub , that code(webpage) will deploy webserver and this webserver can access by Client from google.
 
 By Using jenkins i do this set-up automatic:
+
+Use following steps for do above set-up automatic by using 'Jenkins'.
 
 ❄️Step-1:
 
@@ -101,7 +103,7 @@ Here i use Hooks which make automation that is whenever i change code and commit
       $ git commit index.html -m "mychange"
 
 
-Now, we create empty repo on GitHub for push local code . Don't use README file.
+Now, we create empty repo on GitHub for push local code . NOTE: Don't use README file.
 
 On GitHub there commands give for push code locally.
 
@@ -109,13 +111,13 @@ On GitHub there commands give for push code locally.
       $ git branch -M main
       $ git push -u origin main
 
-Now 1st time we push then need login we use command for login
+Now 1st time we push then need login we use command for login.
 
       $ git config --global user.email "____" <<--  email GitHub
       $  git config --global user.name "______" <<--   password GitHub
 
 ....
-Now Developer set-up done :
+Now Developer set-up done ( push local code to GitHub SCM ):
 
 Note:--
 
@@ -124,9 +126,10 @@ Note:--
 
 ![Screenshot 2024-04-13 174200](https://github.com/Pratikshinde55/Jenkins/assets/145910708/c41d2ed1-3aec-4dfd-b86a-a187ec5001b6)
 
-Now code change & need to only commit that code file:
+Now code change & need to only commit that code file ( Fully Automatic way to push code):
 
-   $ git commit index.html -m "hooksactivate"
+
+      $ git commit index.html -m "hooksactivate"
 
  ![Screenshot 2024-04-13 174650](https://github.com/Pratikshinde55/Jenkins/assets/145910708/3dd4d2ef-485e-401c-9eac-f5c6b8621580)
 
@@ -139,7 +142,7 @@ Whenever i change code and commit this code automatically updated on GitHub.
 
 Now on jenkins i created two Jobs 
 - 1st job (webserver) that create websever setup by using jenkins.
-- 1nd job (gitHubjob1) that pull code from gitHub and deploy that Code on webserver location /var/www/html .
+- 2nd job (gitHubjob1) that pull code from gitHub and deploy that Code on webserver location /var/www/html .
 
 
 1st create webserver job :
