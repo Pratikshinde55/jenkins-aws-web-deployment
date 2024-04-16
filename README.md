@@ -1,6 +1,6 @@
 # Jenkins
 
-Following are the ways of connect to jenkins:
+⚙️ Following are the ways of connect to jenkins:
 
 1. WebUI 
 2. CLI
@@ -84,7 +84,7 @@ Developer create code and upload code on SCM GitHub , that code(webpage) will de
 
 By Using jenkins i do this set-up automatic:
 
-Use following steps for do above set-up automatic by using 'Jenkins'.
+⚙️ Use following steps for do above set-up automatic by using 'Jenkins'.
 
 ✧ Step-1 ✧
 
