@@ -10,7 +10,7 @@ Install and steup of jenkins bye WebUI:
  
 For this i use AWS Cloud EC2 instance (amazon linux2 ami), In this instance i installed jenkins.
 
--Note:
+ - Note:
 
 For install jenkins need yum repository and key, & Jenkins is made from Java , so jenkins work on java .
 (Link:  https://pkg.jenkins.io/redhat-stable/ )
