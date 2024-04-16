@@ -2,11 +2,11 @@
 
 Following are the ways of connect to jenkins:
 
-1. Web GUI 
+1. WebUI 
 2. CLI
 3. API
 
-Install and steup of jenkins bye Web GUI:
+Install and steup of jenkins bye WebUI:
  
 For this i use AWS Cloud EC2 instance amazon linux ami, In this instance i install jenkins.
 
