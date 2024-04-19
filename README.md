@@ -80,10 +80,15 @@ Create First Admin User Username Interface appers: Fill info and start jenkins:
 
 # ❄️  Automated Web Deployment Pipeline with Jenkins on AWS ❄️
 
+ - WorkFlow Structure:
+
+![hgjhgjhgyjhchjchjcv (1)](https://github.com/Pratikshinde55/jenkins-aws-web-deployment/assets/145910708/bea20297-b207-4658-a93c-c45d828ed175)
+
+
 Streamlining web development workflows by automating code deployment from GitHub to an Apache web server using Jenkins on AWS,
 ensuring seamless updates without manual intervention.
 
-About Infrasturcture of this project(use case):
+ - About Infrasturcture of this project(use case):
 
 Developer create code and upload code on SCM GitHub , that code(webpage) will deploy webserver and this webserver can access by Client from google.
 
