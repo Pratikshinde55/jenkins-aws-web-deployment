@@ -33,7 +33,7 @@ Following command For Installing Jenkins on AWS EC2  :
    
        #  yum install java-17-amazon-corretto-devel
 
-       # yum install fontconfig java-17-openjdk  (This not work in some AMI) 
+       #  yum install fontconfig java-17-openjdk  (This not work in some AMI) 
 
 6. Install Jenkins:
 
@@ -44,6 +44,7 @@ Following command For Installing Jenkins on AWS EC2  :
 
 
        #  systemctl start jenkins
+       #  systemctl enable jenkins
 
 Now Jenkins is installed successfully, connet jenkins by webUI:
 
