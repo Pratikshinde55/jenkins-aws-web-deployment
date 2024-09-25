@@ -23,23 +23,23 @@ Following command For Installing Jenkins on AWS EC2  :
 
        sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
-3. Install Jenkins key:
+2. Install Jenkins key:
 
         sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 
-5. Install java For Jenkins: (This command is different for different os)
+3. Install java For Jenkins: (This command is different for different os)
    
         yum install java-17-amazon-corretto-devel
  
-  (This not work in some AMI) 
+  - This not work in some AMI
 
         yum install fontconfig java-17-openjdk
    
-6. Install Jenkins:
+4. Install Jenkins:
 
        yum install jenkins -y
 
-7. Start Jenkins service:
+5. Start Jenkins service:
 
        systemctl start jenkins
        systemctl enable jenkins
