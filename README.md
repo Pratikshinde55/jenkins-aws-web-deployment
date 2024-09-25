@@ -153,9 +153,7 @@ Now code change & need to only commit that code file ( Fully Automatic way to pu
 
 ![Screenshot 2024-04-13 174650](https://github.com/Pratikshinde55/Jenkins/assets/145910708/3dd4d2ef-485e-401c-9eac-f5c6b8621580)
 
- - Note:-
-
-Whenever i change code and commit this code automatically updated on GitHub.
+ - Note:- Whenever i change code and commit this code automatically updated on GitHub.
 
 ### Step-2: [On Jenkins webserver job]
 Now on jenkins i created two Jobs 
@@ -170,8 +168,8 @@ on GitHub create new job named as webserver using freestyle & in Build step put 
 
 - Note: 
 
-For this we need jenkins have root level or admin level power so we give power to jenkins then build webserver job, for this we go to Ec2 instance where jenkins 
-installed or run and give ALL power.
+**For this we need jenkins have root level or admin level power so we give power to jenkins then build webserver job, for this we go to Ec2 instance where jenkins 
+installed or run and give ALL power.**
      
      vim /etc/sudoers
 
@@ -204,20 +202,19 @@ then **Poll SCM trigger** automatically download that code.
 
  - Note: 
 
-That downloaded code is save in jenkins workspace of that job.( this save after when we 1st time Build job then automatically it updated by Poll SCM)
+That downloaded code is save in jenkins workspace of that job.(This save after when we 1st time Build job then automatically it updated by Poll SCM)
 
 ![Screenshot 2024-04-13 182315](https://github.com/Pratikshinde55/Jenkins/assets/145910708/ec01e703-05d4-46f6-a5d3-c04d2fa02f59)
 
-Now , last step of job is to copy code or webpage which is downloaded from GitHub, This downloaded code copy to /var/www/html
+Now, last step of job is to copy code or webpage which is downloaded from GitHub, This downloaded code copy to **/var/www/html**
 
 ![Screenshot 2024-04-13 182528](https://github.com/Pratikshinde55/Jenkins/assets/145910708/045d9773-c284-47a8-a4df-fd2e05a1e8a3)
 
 Now apply & save job.
 
- - Note :---
-
-This job run on jenkins and jenkins is on EC2 amazon linux , this job run only if in our host amazon linux2 EC2 have git so we need to install git on amazon 
-linux2 where jenkins installed.
+ - Note:
+**This job run on jenkins and jenkins is on EC2 amazon linux, this job run only if in our host amazon linux2 EC2 have git so we need to install git on amazon 
+linux2 where jenkins installed.**
      
      sudo yum install git -y
 
