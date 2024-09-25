@@ -46,7 +46,9 @@ Following command For Installing Jenkins on AWS EC2  :
 
 Now Jenkins is installed successfully, connet jenkins by webUI:
 
-For this we use EC2 instance public IP and Jenkins work or "Jenkins Default port no. 8080",
+For this we use EC2 instance public IP and Jenkins work or 
+
+**Jenkins Default port no. = 8080**
 
 On Browser:--  " http://Public_IP : 8080 " (Connect Jenkins WebUI)
 
@@ -93,7 +95,7 @@ By Using jenkins i do this set-up automatic:
 
 ### Step-1: [Push Code from local to SCM GitHub]
 I use Git Bash on local laptop for create code as developer. This code is push to gitHub.
-
+#### Hooks:
 Here i use Hooks which make automation that is whenever i change code and commit that code it automatically update on GitHub.
 
 Create workspace/working area:
