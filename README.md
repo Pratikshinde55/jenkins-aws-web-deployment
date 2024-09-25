@@ -52,9 +52,9 @@ On Browser:--  " http://Public_IP : 8080 " (Connect Jenkins WebUI)
 
  - Note: 
 
-  AWS EC2 Instance have Firewall , for connect to EC2 we need allow security Group:
+AWS EC2 Instance have Firewall , for connect to EC2 we need allow security Group:
 
-   In security group >> edit inbound rule >> "Custom TCP  8080  myIP "
+In security group >> edit inbound rule >> "Custom TCP  8080  myIP "
 
 ![Screenshot 2024-04-13 150813](https://github.com/Pratikshinde55/Jenkins/assets/145910708/05ad7d9f-e63e-49cf-95bb-448dfb4a1916)
 
@@ -62,28 +62,23 @@ Now Jenkins InterFace occurs on browser using Public_Ip of instance and 8080 por
 
 ![Screenshot 2024-04-13 151042](https://github.com/Pratikshinde55/Jenkins/assets/145910708/1e827615-2005-46ef-8390-427624c5bb78)
 
-For Login jenkins Password is neccessary & Jenkins kept password at location "/var/lib/jenkins/secrets/initialAdminPassword" , Go Jenkins OS  and view password 
+- For Login jenkins Password is neccessary & Jenkins kept password at location **"/var/lib/jenkins/secrets/initialAdminPassword"**, Go Jenkins OS  and view 
+password 
+      
+      cat /var/lib/jenkins/secrets/initialAdminPassword
 
-
-    #cat /var/lib/jenkins/secrets/initialAdminPassword
-
-Copy password and paste on WebUI , now Select 'Install suggested plugins' Plugins start downloading:
+- Copy password and paste on WebUI , now Select 'Install suggested plugins' Plugins start downloading:
 
 ![Screenshot 2024-04-13 151514](https://github.com/Pratikshinde55/Jenkins/assets/145910708/42353e64-69da-493d-9816-85153ec7e479)
 
-
-Create First Admin User Username Interface appers: Fill info and start jenkins:
+- Create First Admin User Username Interface appers: Fill info and start jenkins:
 
 ![Screenshot 2024-04-13 152143](https://github.com/Pratikshinde55/Jenkins/assets/145910708/6765f294-f394-4223-8881-4755699dc96d)
 
-
-
-# ❄️  Automated Web Deployment Pipeline with Jenkins on AWS ❄️
-
- - WorkFlow Structure:
+# Automated Web Deployment Pipeline with Jenkins on AWS 
+WorkFlow Structure:
 
 ![hgjhgjhgyjhchjchjcv (1)](https://github.com/Pratikshinde55/jenkins-aws-web-deployment/assets/145910708/bea20297-b207-4658-a93c-c45d828ed175)
-
 
 Streamlining web development workflows by automating code deployment from GitHub to an Apache web server using Jenkins on AWS,
 ensuring seamless updates without manual intervention.
