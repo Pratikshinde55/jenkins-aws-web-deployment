@@ -29,11 +29,11 @@ Following command For Installing Jenkins on AWS EC2  :
 
 5. Install java For Jenkins: (This command is different for different os)
    
-      yum install java-17-amazon-corretto-devel
+        yum install java-17-amazon-corretto-devel
  
-(This not work in some AMI) 
+  (This not work in some AMI) 
 
-     yum install fontconfig java-17-openjdk
+        yum install fontconfig java-17-openjdk
    
 6. Install Jenkins:
 
