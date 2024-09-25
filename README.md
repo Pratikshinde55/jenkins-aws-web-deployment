@@ -89,23 +89,34 @@ Developer create code and upload code on SCM GitHub , that code(webpage) will de
 
 By Using jenkins i do this set-up automatic:
 
-⚙️ Use following steps for do above set-up automatic by using 'Jenkins'.
+- Use following steps for do above set-up automatic by using 'Jenkins'
 
-✧ Step-1 ✧
-
+### Step-1: [Push Code from local to SCM]
 I use Git Bash on local laptop for create code as developer. This code is push to gitHub.
 
 Here i use Hooks which make automation that is whenever i change code and commit that code it automatically update on GitHub.
 
-      $ cd documents
-      $ mkdir jenkins-2024
-      $ cd jenkins-2024
-      $ mkdir myproject
-      $ cd myproject
-      $ git init myproject
-      $ notepad index.html
-      $ git add index.html
-      $ git commit index.html -m "mychange"
+      cd documents
+      mkdir jenkins-2024
+      cd jenkins-2024
+      mkdir myproject
+      cd myproject
+      
+ Initialiaze Git repo command:
+     
+     git init myproject
+     
+ Create Webpage:
+      
+     notepad index.html
+     
+ Addeds to tracking/stagging area of git:
+     
+     git add index.html
+
+ Commit the file/webpage:
+ 
+     git commit index.html -m "mychange"
 
 
 ✧ Now, we create empty repo on GitHub for push local code . NOTE: Don't use README file.
