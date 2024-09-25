@@ -2,7 +2,7 @@
  
  - How to install jenkis :
 
-⚙️ Following are the ways of connect to jenkins:
+Following are the ways of connect to jenkins:
 
 1. WebUI 
 2. CLI
@@ -15,36 +15,34 @@ For this i use AWS Cloud EC2 instance (amazon linux2 ami), In this instance i in
  - Note:
 
 For install jenkins need yum repository and key, & Jenkins is made from Java , so jenkins work on java .
-(Link:  https://pkg.jenkins.io/redhat-stable/ )
+[Jenkins-Download-Link](https://pkg.jenkins.io/redhat-stable/)
 
 Following command For Installing Jenkins on AWS EC2  :
 
 1. Install yum repo For Jenkins:
- 
 
-       #  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+   sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
 3. Install Jenkins key:
 
+   sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 
-       #  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
-
-4. Install java For Jenkins: (This command is different for different os)
+5. Install java For Jenkins: (This command is different for different os)
    
-       #  yum install java-17-amazon-corretto-devel
+   yum install java-17-amazon-corretto-devel
 
-       #  yum install fontconfig java-17-openjdk  (This not work in some AMI) 
+(This not work in some AMI) 
 
+   yum install fontconfig java-17-openjdk
+   
 6. Install Jenkins:
 
+   yum install jenkins -y
 
-       #  yum install jenkins -y
+8. Start Jenkins service:
 
-7. Start Jenkins service:
-
-
-       #  systemctl start jenkins
-       #  systemctl enable jenkins
+   systemctl start jenkins
+   systemctl enable jenkins
 
 Now Jenkins is installed successfully, connet jenkins by webUI:
 
