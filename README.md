@@ -95,8 +95,8 @@ By Using jenkins i do this set-up automatic:
 
 ### Step-1: [Push Code from local to SCM GitHub]
 I use Git Bash on local laptop for create code as developer. This code is push to gitHub.
-#### Hooks:
-Here i use Hooks which make automation that is whenever i change code and commit that code it automatically update on GitHub.
+
+- Hooks: **Here i use Hooks which make automation that is whenever i change code and commit that code it automatically update on GitHub.**
 
 Create workspace/working area:
 
@@ -106,22 +106,21 @@ Create workspace/working area:
      mkdir myproject
      cd myproject
       
- Initialize Git repo command:
+Initialize Git repo command:
      
      git init myproject
      
- Create Webpage:
+Create Webpage:
       
      notepad index.html
      
- Addeds to tracking/stagging area of git:
+Addeds to tracking/stagging area of git:
      
      git add index.html
 
- Commit the file/webpage:
+Commit the file/webpage:
  
      git commit index.html -m "mychange"
-
 
 - Now, we create empty repo on GitHub for push local code . NOTE: Don't use README file.
 
