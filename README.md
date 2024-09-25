@@ -25,7 +25,7 @@ Following command For Installing Jenkins on AWS EC2  :
 
 3. Install Jenkins key:
 
-       sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+        sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 
 5. Install java For Jenkins: (This command is different for different os)
    
@@ -37,12 +37,12 @@ Following command For Installing Jenkins on AWS EC2  :
    
 6. Install Jenkins:
 
-      yum install jenkins -y
+       yum install jenkins -y
 
 7. Start Jenkins service:
 
-      systemctl start jenkins
-      systemctl enable jenkins
+       systemctl start jenkins
+       systemctl enable jenkins
 
 Now Jenkins is installed successfully, connet jenkins by webUI:
 
