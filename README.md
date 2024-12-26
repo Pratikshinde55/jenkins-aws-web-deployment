@@ -1,7 +1,7 @@
 # Automated Web Deployment Pipeline with Jenkins on AWS
  
  - How to install jenkis :
-
+ 
 Following are the ways of connect to jenkins:
 
 1. WebUI 
