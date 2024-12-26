@@ -1,6 +1,6 @@
 # Automated Web Deployment Pipeline with Jenkins on AWS 
 
-- Set-up of jenkins on the AWS Cloud use this link to configure Set-up: [Jenkins-SetUp-onAWS](https://github.com/Pratikshinde55/Jenkins-Setup-onAWS.git)
+- Set-up of Jenkins on the AWS Cloud use this link to configure Set-up: [Jenkins-SetUp-onAWS](https://github.com/Pratikshinde55/Jenkins-Setup-onAWS.git)
 
 WorkFlow Structure:
 
