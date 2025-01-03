@@ -78,13 +78,13 @@ Now code change & need to only commit that code file ( Fully Automatic way to pu
 
  - Note:- Whenever i change code and commit this code automatically updated on GitHub.
 
-### Step-2: [On Jenkins webserver job]
+### Step-2: [On Jenkins Webserver job]
 Now on jenkins i created two Jobs 
 - 1st job (webserver) that create websever setup by using jenkins.
 - 2nd job (gitHubjob1) that pull code from gitHub and deploy that Code on webserver location /var/www/html .
 
 
-#### 1st create webserver job :
+#### 1st Create Webserver job :
 on GitHub create new job named as webserver using freestyle & in Build step put below screenshot steps.
 
 ![Screenshot 2024-04-13 175659](https://github.com/Pratikshinde55/Jenkins/assets/145910708/423f0348-6220-4f4a-9e7f-93612c46e603)
